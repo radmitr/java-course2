@@ -1,20 +1,12 @@
 # Курс "JAVA – получи Чёрный Пояс!" от Заура Трегулова на Udemy
 
+[www.udemy.com/course/java-ot-zaura/](https://www.udemy.com/course/java-ot-zaura/)
+
 **Java Core**: Generics, Collections, Nested Classes, Lambdas, Streams,
 Multithreading, IO and NIO, RegEx, Reflection, Annotations
 
-[www.udemy.com/course/java-ot-zaura/](https://www.udemy.com/course/java-ot-zaura/)
-
-----------------------------------------------------
-
-**Что сделано**
-
-- *Изучены серьёзные темы на простых примерах*
-- *Добавил закладки и содержание в PDF со слайдами*
-
-----------------------------------------------------
-
-**Программа курса**
+<details>
+<summary>Программа курса</summary>
 
 1. **Введение**  
     1.1. Знакомство с курсом  
@@ -157,4 +149,13 @@ Multithreading, IO and NIO, RegEx, Reflection, Annotations
     11.4. Класс Scanner. Часть 2  
     11.5. Reflection. Часть 1  
     11.6. Reflection. Часть 2  
-    11.7. Аннотации  
+    11.7. Аннотации 
+
+</details>
+
+----------------------------------------------------
+
+**Что сделано:**
+
+- *Разобраны серьёзные темы на простых примерах*
+- *Добавил **закладки** и **содержание** в PDF со слайдами*
