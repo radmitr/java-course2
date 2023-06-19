@@ -22,14 +22,16 @@ public class AnonymousClass {
     public static void main(String[] args) {
         Math m = new Math() {
             int c = 10;
-            void abc() {
 
+            void abc() {
             }
+
             // 1 // 2
 //            @Override
 //            public int doOperation(int a, int b) {
 //                return a + b;
 //            }
+
             // 3
             @Override
             public int doOperation(int a, int b) {
@@ -43,9 +45,10 @@ public class AnonymousClass {
 
         Math m2 = new Math() {
             int c = 10;
-            void abc() {
 
+            void abc() {
             }
+
             @Override
             public int doOperation(int a, int b) {
                 return a * b;
@@ -67,7 +70,7 @@ public class AnonymousClass {
 // 2 - class
 //-----------------------------------
 class Math {
-    int doOperation(int a, int b){
+    int doOperation(int a, int b) {
         return a / b;
     }
 }

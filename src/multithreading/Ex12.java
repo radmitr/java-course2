@@ -177,7 +177,6 @@ public class Ex12 {
     }
 
     public static void main(String[] args) {
-
         Thread thread1 = new Thread(new RunnableImplMobile());
         Thread thread2 = new Thread(new RunnableImplViber());
         Thread thread3 = new Thread(new RunnableImplTelegram());

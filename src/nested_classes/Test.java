@@ -16,18 +16,15 @@ public class Test {
 
     // Static class
     static class A {
-
     }
 
     // Inner class
     class B {
-
     }
 
     void Method() {
         // Local class
         class C {
-
         }
     }
 
