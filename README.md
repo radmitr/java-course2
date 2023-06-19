@@ -6,7 +6,11 @@
 Multithreading, IO and NIO, RegEx, Reflection, Annotations
 
 <details>
-<summary>Программа курса</summary>
+    <summary>
+        <strong>
+            <big>Программа курса</big>
+        </strong>
+    </summary>
 
 1. **Введение**  
     1.1. Знакомство с курсом  
