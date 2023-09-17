@@ -31,12 +31,17 @@ public class CallableFactorialEx {
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         Factorial2 factorial2 = new Factorial2(6);
+
+        // Callable нельзя добавлять в Thead
 //        Thread thread = new Thread(factorial2); // Cannot resolve constructor 'Thread(Factorial2)'
-        // Для Callable мы не можем использовать метод execute(), т.к. он принимает только Runnable
-        // Используем метод submit()
-        // Получаем Future с помощью мтода get()
-        // Проверяем завершение задачи с помощью метода isDone()
+
+        // Для Callable мы не можем использовать метод execute(), т.к. execute() принимает только Runnable
+        //   1) Используем метод submit()
+        //   2) Получаем Future с помощью метода get()
+        //   3) Проверяем завершение задачи с помощью метода isDone()
+//        Future<Integer> future = executorService.execute(factorial2); // нельзя, execute() принимает только Runnable
         Future<Integer> future = executorService.submit(factorial2); // Future with generic
+
         try {
             System.out.println("future.isDone() -> " + future.isDone());
             System.out.println("Мы хотим получить результат");
@@ -66,7 +71,7 @@ class Factorial2 implements Callable<Integer> {
     @Override
     public Integer call() throws Exception {
         if (f <= 0) {
-            throw new Exception("Вы ввели неверное число!");
+            throw new Exception("Вы ввели неверное число!"); // !!! в call() можем выбрасывать исключение
         }
         int result = 1;
         for (int i = 1; i <= f; i++) {
