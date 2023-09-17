@@ -78,16 +78,16 @@
      AtomicIntegerEx
 ------------------------------------------------------------------------
 22. Синхронизированные коллекции
-     thread_safe.SynchronizedCollectionEx1
-     thread_safe.SynchronizedCollectionEx2
+     collection.thread_safe.SynchronizedCollectionEx1
+     collection.thread_safe.SynchronizedCollectionEx2
 ------------------------------------------------------------------------
 23. ConcurrentHashMap
-     thread_safe.ConcurrentHashMapEx
+     collection.thread_safe.ConcurrentHashMapEx
 ------------------------------------------------------------------------
 24. CopyOnWriteArrayList
-     thread_safe.CopyOnWriteArrayListEx
+     collection.thread_safe.CopyOnWriteArrayListEx
 ------------------------------------------------------------------------
 25. ArrayBlockingQueue
-     thread_safe.ArrayBlockingQueueEx1
-     thread_safe.ArrayBlockingQueueEx2
+     collection.thread_safe.ArrayBlockingQueueEx1
+     collection.thread_safe.ArrayBlockingQueueEx2
 ------------------------------------------------------------------------
