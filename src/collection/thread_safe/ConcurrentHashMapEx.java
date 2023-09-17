@@ -36,6 +36,8 @@ public class ConcurrentHashMapEx {
 //        map.put(null, "Alexandr"); // java.lang.NullPointerException
         System.out.println(map);
 
+        // segment locking or bucket locking
+
         Runnable runnable1 = () -> {
             Iterator<Integer> iterator = map.keySet().iterator();
             while (iterator.hasNext()) {
@@ -46,7 +48,6 @@ public class ConcurrentHashMapEx {
                 }
                 Integer i = iterator.next(); // java.util.ConcurrentModificationException
                 System.out.println(i + ":" + map.get(i));
-
             }
         };
 
