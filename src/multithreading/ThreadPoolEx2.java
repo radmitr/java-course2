@@ -17,6 +17,11 @@ import java.util.concurrent.TimeUnit;
         Executors.newScheduledThreadPool(int count)
 
     Методы: schedule(), scheduleAtFixedRate(), scheduleWithFixedDelay().
+    ------------------------
+    Executors.newCachedThreadPool() – создаёт pool, в котором создаются потоки по надобности.
+    Если какой-нибудь поток не используется 60 секунд после последнего использования, то он удаляется.
+
+    Методы: execute(), shutdown(), awaitTermination().
 */
 public class ThreadPoolEx2 {
 
@@ -57,7 +62,7 @@ public class ThreadPoolEx2 {
                 Thread.sleep(timeInMillis);
             }
         }
-        Thread.sleep(59000); // спим 59 секунд
+        Thread.sleep(60000); // через 60 секунд удаляются неиспользуемые потоки
         System.out.println("");
         System.out.println("----- The second influx of tasks -----");
         for (int i = count - 1; i >= 0; i--) {
