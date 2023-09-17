@@ -40,10 +40,13 @@ public class RunnableFactorialEx {
         // 2 - для "Урок 17. Интерфейсы Callable и Future. Часть 2" - submit(), isDone()
         ExecutorService executorService = Executors.newSingleThreadExecutor();
         Factorial factorial = new Factorial(5);
+
         // Для Runnable используем метод execute()
 //        executorService.execute(factorial);
+
         // Для Runnable Можем использовать метод submit(). Future without generic
         Future future = executorService.submit(factorial);
+
         // Проверяем завершение задачи с помощью метода isDone()
         System.out.println("future.isDone() -> " + future.isDone());
         executorService.shutdown();
