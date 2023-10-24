@@ -7,9 +7,7 @@ Multithreading, IO and NIO, RegEx, Reflection, Annotations
 
 <details>
     <summary>
-        <strong>
-            <big>Программа курса</big>
-        </strong>
+        <b>Программа курса</b>
     </summary>
 
 1. **Введение**  
