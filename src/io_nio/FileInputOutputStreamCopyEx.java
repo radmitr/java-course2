@@ -7,7 +7,7 @@ import java.io.*;
     // 2nd class
 /**
     -----------------------------------
-     FileInputStream& FileOutputStream
+     FileInputStream & FileOutputStream
     -----------------------------------
     FileInputStream и FileOutputStream используются для работы с бинарными файлами.
 
@@ -22,13 +22,11 @@ public class FileInputOutputStreamCopyEx {
 
         try (FileInputStream inputStream = new FileInputStream("java_picture.jpg");
              FileOutputStream outputStream = new FileOutputStream("test/java_picture.jpg")) {
-
             int i;
             while ((i = inputStream.read()) != -1) {
                 outputStream.write(i);
             }
             System.out.println("Done!");
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

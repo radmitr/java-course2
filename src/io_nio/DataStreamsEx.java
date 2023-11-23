@@ -34,7 +34,6 @@ public class DataStreamsEx {
             System.out.println(inputStream.readLong());
             System.out.println(inputStream.readFloat());
             System.out.println(inputStream.readDouble());
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

@@ -16,7 +16,7 @@ import java.io.*;
     BufferedReader reader = new BufferedReader(new FileReader(“file1.txt”));
 
     -----------------------------------
-     FileInputStream& FileOutputStream
+     FileInputStream & FileOutputStream
     -----------------------------------
     FileInputStream и FileOutputStream используются для работы с бинарными файлами.
 
@@ -49,7 +49,6 @@ public class BufferedReaderWriterCopyEx {
                 writer.newLine();
             }
             System.out.println("Done!");
-
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {

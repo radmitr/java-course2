@@ -75,7 +75,6 @@ public class ChannelBufferEx1 {
             // wrap == allocate + put + flip
             ByteBuffer buffer2 = ByteBuffer.wrap(text.getBytes());
             channel.write(buffer2);
-
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {

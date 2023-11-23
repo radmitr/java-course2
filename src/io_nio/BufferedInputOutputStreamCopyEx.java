@@ -7,7 +7,7 @@ import java.io.*;
     // 3rd class
 /**
     -----------------------------------
-     FileInputStream& FileOutputStream
+     FileInputStream & FileOutputStream
     -----------------------------------
     FileInputStream и FileOutputStream используются для работы с бинарными файлами.
 
@@ -30,7 +30,6 @@ public class BufferedInputOutputStreamCopyEx {
                 outputStream.write(array, 0, n);
             }
             System.out.println("Done!");
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {

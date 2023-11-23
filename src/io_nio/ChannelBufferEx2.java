@@ -78,7 +78,6 @@ public class ChannelBufferEx2 {
             while (buffer.hasRemaining()) {
                 System.out.println((char)buffer.get()); // >> "h", >> "i", >> "j" (position = 4)
             }
-
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
